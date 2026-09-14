@@ -1,0 +1,5 @@
+node_modules/
+flowdesk.db
+*.db
+dist/
+.env
