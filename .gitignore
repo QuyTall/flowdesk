@@ -3,3 +3,4 @@ flowdesk.db
 *.db
 dist/
 .env
+data.json
