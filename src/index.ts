@@ -1,8 +1,13 @@
 import { ask, closeApp } from "./utils/input"
-import { addTask, showTasks, completeTask, deleteTask, filterByStatus, searchTask } from "./services/TaskService"
+import { addTask, showTasks, completeTask, deleteTask, 
+         filterByStatus, searchTask, initTasks } from "./services/TaskService"
 import { Priority } from "./models/Priority"
-import { Status } from "./models/Task"
+import { Status } from "./models/Status"
+
 async function main(): Promise<void> {
+  
+  await initTasks()
+  
   console.log("=== FLOWDESK — TASK MANAGEMENT ===")
 
   while (true) {
